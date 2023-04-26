@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/responsividade.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/jogo.css">
+
+    <script src="../js/jogo.js" defer></script>
+
+    <title>Jogo da memória</title>
+</head>
+
+<body>
+    <img id="ImgLadoEsquerdo" src="../assets/LadoEsquerdoMemoria.svg">
+    <div class="conteudo_pagina">
+        <div class="titulo">
+            <img class="logo" src="../assets/CerebroLogo.svg" alt="imagem de um cerebro">
+            <div class="acento_titulo">
+                <h1 class="display-column_titulo">
+                    Jogo da memoria <span>GRAVITY FALLS</span>
+                </h1>
+            </div>
+        </div>
+        <div class="tempo">
+            Tempo: <span class="timer">0</span>
+        </div>
+        <div class="teste">
+            <div class="fileiras_cartas"></div>
+        </div>
+    </div>
+    <img id="ImgLadoDireito" src="../assets/LadoDireitoMemoria.svg">
+    <div class="hidden modal">
+        <div class="conteudo-modal">
+            Você Ganhou!!! Seu tempo foi de <br><span class="time-win"></span><br>
+            Deseja jogar novamente?
+            <div class="butoes">
+                <button id="reniciarJogo">Sim</button>
+                <button id="encerrarJogo">Nao</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
