@@ -1,0 +1,132 @@
+.tempo {
+    display: flex;
+    margin-top: -34px;
+    width: 860px;
+    justify-content: end;
+
+    gap: 12px;
+
+    font-family: 'Gravitation Falls';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 66px;
+
+    color: #8E9E61;
+
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+}
+
+.tempo span {
+    font-family: 'DynaPuff', cursive;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.fileiras_cartas {
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 136.95px);
+    width: 100%;
+    max-width: 765px;
+    gap: 50px 71px;
+}
+
+.carta {
+    aspect-ratio: 0.671;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.lado {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #503C3C;
+    border-radius: 20px;
+
+    transition: all 400ms ease;
+}
+
+.frente {
+    transform: rotateY(180deg);
+}
+
+.costas {
+    background-image: url('../assets/CartaFundo.svg');
+    backface-visibility: hidden;
+}
+
+.revelar-carta {
+    transform: rotateY(180deg);
+}
+
+.desabilitar-carta {
+    filter: saturate(0);
+    opacity: 0.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.conteudo-modal {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Gravitation Falls';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #8E9E61;
+
+    text-shadow: -3px -1px 0 #000, 2px -1px 0 #000, -2px 1px 0 #000, 3px 1px 0 #000;
+}
+
+.butoes {
+    display: flex;
+    gap: 100px;
+
+    margin-top: 16px;
+}
+
+.butoes button {
+    width: 164px;
+    height: 53px;
+
+    cursor: pointer;
+
+    background: #FFFFFF;
+    border-radius: 30px;
+
+    font-family: 'Gravitation Falls';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #8E9E61;
+
+    text-shadow: -3px -1px 0 #000, 2px -1px 0 #000, -2px 1px 0 #000, 3px 1px 0 #000;
+}

@@ -1,0 +1,51 @@
+body {
+    height: 100vh;
+
+    background-image: url('../assets/ImgFundoMemoria.svg');
+    background-size: cover;
+}
+
+#ImgLadoEsquerdo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+#ImgLadoDireito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+}
+
+.conteudo_pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    width: 100vw;
+    height: 97px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    margin-top: 60px;
+}
+
+
+.titulo h1 {
+    font-family: 'Gravitation Falls';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 66px;
+
+    color: #8E9E61;
+
+    text-shadow: -3px -1px 0 #000, 2px -1px 0 #000, -2px 1px 0 #000, 3px 1px 0 #000;
+}
